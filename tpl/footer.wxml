@@ -1,0 +1,5 @@
+<view class="foooter full-row">
+    <view>
+        <image mode="widthFix" src="../../images/footer_bg.jpg" style="width:100%;"></image>
+    </view>
+</view>

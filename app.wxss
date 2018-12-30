@@ -1,0 +1,46 @@
+page {
+    background-color: #f1f1f1;
+    font-family: "Microsoft YaHei";
+}
+
+.clear {
+    clear: both;
+}
+
+.tc {
+    text-align: center;
+}
+
+.inner-container {
+    width: 92%;
+    margin: 0 auto;
+    padding: 10px 0;
+    position: relative;
+}
+
+.full-row {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200rpx 0;
+    box-sizing: border-box;
+}
+
+.btn-area {
+    background-color: #f00;
+    height: 40px;
+}
+
+.btn-area navigator {
+    float: left;
+    padding: 0 10px;
+    color: #fff;
+}

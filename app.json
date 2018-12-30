@@ -1,0 +1,13 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "black",
+        "navigationBarBackgroundColor": "#c0c0c0",
+        "navigationBarTitleText": "自贡九洲泌尿生殖医院",
+        "backgroundColor": "#000000",
+        "navigationBarTextStyle": "black"
+    }
+}

@@ -1,0 +1,61 @@
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: #aaa;
+}
+
+.usermotto {
+    margin-top: 200px;
+}
+
+.about {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.about .flex-wrp {
+    margin: 0 auto;
+}
+
+.about .flex-wrp view.flex-item {
+    width: 46%;
+    float: left;
+}
+
+.about .flex-wrp view.ico {
+    float: left;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about .flex-wrp view.ico image {
+    vertical-align: middle;
+}
+
+.about .flex-wrp view.bc_1 {
+    background-color: #ff0;
+}
+
+.about .flex-wrp view.bc_1 navigator .title {
+    font-size: 32rpx;
+}
+
+.about .flex-wrp view.bc_1 navigator .describe {
+    font-size: 26rpx;
+}
+
+.about .flex-wrp view.bc_1 navigator view.ico image {
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,172 @@
+<swiper autoplay="{{autoplay}}" circular="true" duration="{{duration}}" indicatorDots="{{indicatorDots}}" interval="{{interval}}">
+    <swiper-item wx:for="{{arr}}">
+        <image class="slide-image" src="{{item}}" width="100%"></image>
+    </swiper-item>
+</swiper>
+<view class="about">
+    <view class="flex-wrp" style="flex-direction:row;">
+        <view class="flex-item bc_1" style="background:url(http://www.kmhxnkyy.com/weixin/images/bg-01.png);">
+            <navigator url="#">
+                <view class="ico">
+                    <image src="/images/ico-hospital.png"></image>
+                </view>
+                <view>
+                    <view>
+                        <text class="title">走进医院</text>
+                    </view>
+                    <view>
+                        <text class="describe">了解医院 快速治疗</text>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+        <view class="flex-item bc_1" style="background:url(http://www.kmhxnkyy.com/weixin/images/bg-02.png);">
+            <navigator url="#">
+                <view class="ico">
+                    <image src="/images/ico-doctor.png"></image>
+                </view>
+                <view>
+                    <view>
+                        <text class="title">医生就诊</text>
+                    </view>
+                    <view>
+                        <text class="describe">与医生面对面</text>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+        <view class="flex-item bc_1" style="background:url(http://www.kmhxnkyy.com/weixin/images/bg-03.png);">
+            <navigator url="#">
+                <view class="ico">
+                    <image src="/images/ico-map.png"></image>
+                </view>
+                <view>
+                    <view>
+                        <text class="title">来院路线</text>
+                    </view>
+                    <view>
+                        <text class="describe">熟知路线 轻松就诊</text>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+        <view class="flex-item bc_1" style="background:url(http://www.kmhxnkyy.com/weixin/images/bg-04.png);">
+            <navigator url="#">
+                <view class="ico">
+                    <image src="/images/ico-order.png"></image>
+                </view>
+                <view>
+                    <view>
+                        <text class="title">预约挂号</text>
+                    </view>
+                    <view>
+                        <text class="describe">网上预约 优先看诊</text>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</view>
+<view class="full-row">
+    <view class="container-icon inner-container">
+        <view class="h i1">
+            <text>❥ 妇科疾病</text>
+        </view>
+        <view class="items">
+            <view bindtap="calling1" class="item" wx:for="{{array_department[0]}}" wx:for-item="i">
+                <navigator url="#">
+                    <view class="ico byby" style="background-image:url({{array_department[0][index].icoImage}});background-position:{{array_department[0][index].icoPosition}};"></view>
+                    <view class="text">
+                        <text>{{array_department[0][index].title}}</text>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+        <view class="clear"></view>
+    </view>
+</view>
+<view class="clear"></view>
+<view class="full-row">
+    <view class="container-icon inner-container">
+        <view class="h i2">
+            <text>♞ 男科疾病</text>
+        </view>
+        <view class="items">
+            <view bindtap="calling2" class="item n" wx:for="{{array_department[1]}}" wx:for-item="i">
+                <navigator url="#">
+                    <view class="ico" style="background-image:url({{array_department[1][index].icoImage}});"></view>
+                    <view class="text">
+                        <text>{{array_department[1][index].title}}</text>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+    <view class="clear"></view>
+</view>
+<view class="expert full-row">
+    <scroll-view scrollX="true" style=" white-space: nowrap; display: flex">
+        <view class="item">
+            <view class="img">
+                <image src="../../images/expert-01.jpg"></image>
+            </view>
+            <view class="text">
+                <text>张德义 耳鼻喉医生</text>
+            </view>
+        </view>
+        <view class="item">
+            <view class="img">
+                <image src="../../images/expert-03.jpg"></image>
+            </view>
+            <view class="text">
+                <text>高桂枝 妇科医生</text>
+            </view>
+        </view>
+        <view class="item">
+            <view class="img">
+                <image src="../../images/expert-05.jpg"></image>
+            </view>
+            <view class="text">
+                <text>张兰仙 妇科医生</text>
+            </view>
+        </view>
+        <view class="item">
+            <view class="img">
+                <image src="../../images/expert-06.jpg"></image>
+            </view>
+            <view class="text">
+                <text>仇武照 男科医生</text>
+            </view>
+        </view>
+        <view class="item">
+            <view class="img">
+                <image src="../../images/expert-04.jpg"></image>
+            </view>
+            <view class="text">
+                <text>王国军 男科医生</text>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+<include src="../../tpl/footer"></include>
+<view class="footer-nav">
+    <view bindtap="home" class="item">
+        <view class="text">
+            <text>首页</text>
+        </view>
+        <view class="border"></view>
+    </view>
+    <view bindtap="calling2" class="item">
+        <view class="text">
+            <text>男科电话</text>
+        </view>
+        <view class="border"></view>
+    </view>
+    <view bindtap="calling1" class="item">
+        <view class="text">
+            <text>妇科电话</text>
+        </view>
+        <view class="border"></view>
+    </view>
+</view>
+<contact-button sessionFrom="weapp" size="20" type="default-light"></contact-button>
